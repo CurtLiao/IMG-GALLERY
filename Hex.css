@@ -1,0 +1,280 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+}
+/*------------------------------header-------------------------------*/
+.header{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header h1{
+	float:left;
+}
+.logo a{
+	display: block;
+	text-indent:101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-top:20px;
+	margin-left:20px; 
+	width: 174px;
+	height: 52px;
+	background: url(Material/logo_03.png)
+}
+.TopicText{
+	height: 80px;
+	position: relative;
+}
+.TopicText img{
+	opacity: 0.5;
+	margin-top: 120px;
+}
+.TopicText p{
+	position: absolute;
+	left:20px;
+	top:30px;
+}
+.topMenu{
+	margin-top:10px; 
+	width: 100%;
+	background-color: rgba(0,0,0,0.05);
+}
+.topMenu li{
+	float:left;
+	padding: 5px 20px;
+}
+.topMenu li a{
+	text-decoration: none;
+}
+.header .topMenu ul{ 
+	float: right;
+}
+.facebook img,.twitter img{
+	float:left;
+}
+.facebook a{
+	color: blue;
+}
+.facebook p,.twitter p{
+	float:left;
+}
+.twitter a{
+	color: #33CCFF;
+}
+.facebook a:hover{
+	color:#33FFFF;
+}
+.twitter a:hover{
+	color:#0000FF;
+}
+.clearfix{
+	clear: both;
+}
+.header .menu{
+	margin-top:20px; 
+	float:right;
+}
+.header .menu li{
+	float:left;
+ 	font-size: 20px;
+ 	padding: 0 10px;
+	font-weight: bold;
+}
+.header .menu li a{
+	color:	#33FF33;
+	text-decoration: none;
+	font-family: 微軟正黑體;
+}
+.TopicPicture{
+	height: 400px;
+	background-image :url(Material/bgtopic.png),linear-gradient(#000000,#888888);
+	background-repeat: no-repeat no-repeat;
+	-webkit-background-size: 300px 300px,1200px 400px;
+	background-size: 300px 400px,1200px 400px;
+	background-position: bottom right,left;
+                      
+}
+.TopicPicture .TopicText p{
+	padding-top:100px;
+	padding-left:40px;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 微軟正黑體;
+	color:white;
+}
+
+/*---------------------------content----------------------------*/
+.content{
+	width: 1200px;
+	margin: 20px auto;
+}
+.content .htmlCourse,.content .rwdCourse,.content .jqueryCourse{
+	float:left;
+	width: 30%;
+	height: 360px;
+	margin-right: 1.666%;
+	margin-left: 1.666%;
+	margin-bottom: 50px; 
+	background-color:white;
+	box-shadow: 5px 5px 15px gray;
+}
+.content .rwdCourse img,.content .htmlCourse img,.content .jqueryCourse img{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 55px;
+}
+.htmlCourse h2,.rwdCourse h2 ,.jqueryCourse h2{
+	font-size:20px;
+	text-align: center; 
+}
+.htmlCourse p,.rwdCourse p{
+	padding: 20px;
+	line-height: 24px;
+	letter-spacing: 2px;
+}
+.jqueryCourse p{
+	padding:20px 20px 15px 20px;
+	line-height: 24px;
+	letter-spacing: 2px;
+}
+.jqueryCourse li{
+	padding-bottom: 5px;
+	list-style-type: square;
+}
+.jqueryCourse ul{
+	line-height: 18px;
+	padding-left: 50px;
+}
+/*-------------------------footer-----------------------------------*/
+.footer,.footer_course{
+	width: 1200px;
+	margin: 10px auto;
+	background-color: red;
+	background-color: #fff;
+}
+.footer .footer_course td{
+	padding: 10px;
+}
+.footer .footer_course .course{
+	text-align: center;
+	margin: 0 auto;
+}
+.footer .footer_course td,.footer .footer_course th{
+	font-family: 標楷體;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top:20px; 
+	padding-bottom:20px;
+	padding-right: 100px;
+	padding-left: 100px;
+	border-bottom: 1px solid black;
+	border-top:1px solid black;
+}
+.course .grey{
+	background-color: rgba(0,0,0,0.1);
+}
+.course .green{
+	color:green;
+}
+.courseCompare{
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.courseCompare p{
+	font-size: 30px;
+	text-align: center;
+}
+.footer .footer_con{
+	width: 800px;
+	height: 300px;
+	background:url(Material/bg_03.png) repeat-x;
+	margin: 40px auto;
+}
+.footer .footer_con h2{
+	font-size: 20px;
+	text-align: center;
+	font-family: 標楷體;
+	padding-top: 20px;
+}
+.footer_con .feelingText{
+	float:left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.footer_con .infoText{
+	color: white;
+	font-weight: bold;
+	float:left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.footer_con .infoText input{
+	margin:10px 0;
+	width: 350px;
+}
+.footer_con .infoText .submitButton{
+	float:right;
+	width: 50px;
+	margin-right: 3px;
+	background-color: green;
+	color:white;
+	font-family: 微軟正黑體;
+}
+.copy p{
+	text-align: center;
+	padding-top : 10px; 
+}
+.bottomfooter{
+	margin:0 auto;
+}
+.contact{
+	float:right;
+}
+.bottomfooter p{
+	margin-bottom: 4px;
+}
+.bottomfooter span{
+	color:pink;
+}
