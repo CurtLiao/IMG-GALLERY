@@ -1,0 +1,11 @@
+  $(this).css({
+    textDecoration:"line-through",  //object 中的 css 要用camelCase
+    color:"gray"
+  });
+
+  parent() 會找到元素的父元素
+
+
+css : transition
+
+整理 css 檔案 : 大範圍的放前面 如 : body, 各種 tag  
