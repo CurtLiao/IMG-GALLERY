@@ -286,7 +286,7 @@ table {
 }
 .flagcontent{
 	margin:1em 3px 0 3px;
-	font-family: verdana;
+	font-family: 微軟正黑體;
 	line-height: 20px;
 }
 .timeline li:after {
@@ -360,8 +360,7 @@ table {
 	padding-bottom: 30px;
 }
 .workweb p{
-	padding-top: 5px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 .works .workhand{
 	position: relative;
