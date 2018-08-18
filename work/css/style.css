@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+	background-color: #DDDDDD;
+	font-family: fantasy;
+}
+*{
+	box-sizing: border-box;
+}
+.topContainer{
+	width: 100%;
+	background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:#AAAAAA;
+	position: relative;
+	height: 500px;
+	margin-bottom: 100px;
+}
+.topContainer .nav{
+	position: absolute;
+	left: 95px;
+	top:50px;
+	font-size: 20px;
+	display: none;
+}
+.section-content-fadein{
+	display: none;
+}
+
+.section-content-fadein h1{
+    vertical-align: middle;
+    padding: 200px 100px 20px 100px;
+    font-size: 50px;
+}
+.section-content-fadein h1:after{
+	content: ' ';
+    display: block;
+    width: 160px;
+    margin: 10px auto -10px 0;
+    border: 2px solid #DDDDDD;
+}
+.section-content-fadein em{
+	padding: 0 100px 20px 100px;
+	/*display: none;*/
+}
+.content{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+.title{
+	float: left;
+}
+.content h2{
+	margin:50px 100px 20px 100px;
+}
+.content h2:after{
+	display: block;
+	content: ' ';
+	border: 2px solid black;
+	width: 50px;
+	margin: 10px 20px -10px 0;
+}
+.work{
+	float: left;
+	margin:50px 0;
+}
+.work .fixunder{
+	text-decoration: none;
+	cursor:pointer;
+}
+img{
+	border-radius: 10px;
+}
+.work h3{
+	font-family: fantasy;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding: 5px 3px;
+}
+.clearfix{
+	clear: both;
+}
+#workimg{
+	margin:0 100px 20px 100px;
+	border-radius: 0;
+}
+.fa-laptop{
+	color:gray;
+	font-size: 40px;
+	margin:0 100px 20px 100px;
+}
+.footerContainer{
+	width: 100%;
+	background: orange;
+	height: 50px;
+}

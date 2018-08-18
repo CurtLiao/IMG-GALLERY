@@ -317,6 +317,7 @@ table {
 	margin:0 auto;
 	margin-bottom: 40px;
 	width: 100%;
+
 }
 .works h2{
 	text-shadow: 3px 3px 10px #AAAAAA;
@@ -329,14 +330,15 @@ table {
 .works a{
 	text-decoration: none;
 }
-.works a:hover{
-	border:1px dotted #FFFFFF;
+.workrabbit:hover,.workindependent:hover,.workweb:hover{
+	opacity: 0.8;
 }
 .workrabbit,.workindependent,.workweb{
+	line-height: 24px;
 	padding-top: 10px;
 	text-align: center;
 	border-radius: 10px;
-	margin: 0 1.66666%;
+	margin:  1.66666%;
 	float:left;
 	width: 30%;
 	border:2px dotted #CCCCFF ;
@@ -357,7 +359,7 @@ table {
 	color:	#5500DD;
 }
 .workrabbit p{
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 }
 .workweb p{
 	padding-bottom: 20px;
