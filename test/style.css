@@ -4,9 +4,11 @@ body{
   	background: linear-gradient(to right, #2bc0e4, #eaecc6);
 }
 img{
-	height: 200px;
+	height: 180px;
 	width:200px;
 	border-radius: 20px;
+	margin-left: 10px;
+	margin-bottom: 5px;
 }
 img:hover{
 	opacity: 0.8;
