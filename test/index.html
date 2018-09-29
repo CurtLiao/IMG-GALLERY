@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="mouse.png">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.14/howler.core.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>韭菜、韭黃、韭菜花分辨</title>
+	<script language="javascript">
+		var pai=[1,1,2,2,3,3];
+		var flag=false;
+		var oneid=-1;
+    	function fanpai(id){
+			if(pai[id]==-1){
+					return;
+				}
+				document.getElementById("img"+id).src="image"+pai[id]+".jpg";
+				if(flag){//翻第2張
+					if(pai[id]==pai[oneid]){
+						pai[id]=-1;
+						pai[oneid]=-1;
+					}
+					else{
+						setTimeout("koupai("+id+","+oneid+")",300);
+					}
+					oneid=-1;
+					flag=false;
+				}
+				else{//翻第1張
+					oneid=id;
+					flag=true;
+				}
+				checkSuccess();
+		}
+		//載入頁面重新洗牌
+		function xipai(){
+			var a,b,temp;
+			for(i=0;i<6;i++){
+				var a=Math.floor(Math.random()*6);
+				var b=Math.floor(Math.random()*6);
+				temp=pai[a];
+				pai[a]=pai[b];
+				pai[b]=temp;
+			}
+		}
+		//牌不同扣住
+		function koupai(id,oneid){
+			document.getElementById("img"+id).src="1.jpg";
+			document.getElementById("img"+oneid).src="1.jpg";
+		}
+		//檢驗是否全部成功
+		function checkSuccess(){
+			for(var i=0;i<6;i++){
+				if(pai[i]!=-1)
+					return;
+				}
+			alert("恭喜，OK了");
+			location.reload();
+		}
+    </script>
+</head>
+<body>
+	<center>
+    <br /><br />
+    <h1>韭菜、韭黃、韭菜花分辨</h1>
+        <br />
+    	<table>
+        <tr>
+	        <td><img src="1.jpg" id="img0" onclick="fanpai(0)"/></td>
+	        <td><img src="1.jpg" id="img1" onclick="fanpai(1)"/></td>
+	        <td><img src="1.jpg" id="img2" onclick="fanpai(2)"/></td>
+        </tr>
+        <tr>
+	        <td><img src="1.jpg" id="img3" onclick="fanpai(3)"/></td>
+	        <td><img src="1.jpg" id="img4" onclick="fanpai(4)"/></td>
+	        <td><img src="1.jpg" id="img5" onclick="fanpai(5)"/></td>
+        </tr>
+        </table>
+    </center>
+</body>
+<script language="javascript">
+	xipai();
+</script>
+</html>
