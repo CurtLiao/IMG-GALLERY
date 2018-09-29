@@ -4,6 +4,8 @@ body{
   	background: linear-gradient(to right, #2bc0e4, #eaecc6);
 }
 img{
+	height: 200px;
+	width:200px;
 	border-radius: 20px;
 }
 img:hover{

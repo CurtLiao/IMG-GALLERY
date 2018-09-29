@@ -8,7 +8,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>韭菜、韭黃、韭菜花分辨</title>
 	<script language="javascript">
-		var pai=[1,1,2,2,3,3];
+		var pai=[1,1,2,2,3,3,4,4,5,5,6,6];
 		var flag=false;
 		var oneid=-1;
     	function fanpai(id){
@@ -36,9 +36,9 @@
 		//載入頁面重新洗牌
 		function xipai(){
 			var a,b,temp;
-			for(i=0;i<6;i++){
-				var a=Math.floor(Math.random()*6);
-				var b=Math.floor(Math.random()*6);
+			for(i=0;i<12;i++){
+				var a=Math.floor(Math.random()*12);
+				var b=Math.floor(Math.random()*12);
 				temp=pai[a];
 				pai[a]=pai[b];
 				pai[b]=temp;
@@ -51,7 +51,7 @@
 		}
 		//檢驗是否全部成功
 		function checkSuccess(){
-			for(var i=0;i<6;i++){
+			for(var i=0;i<12;i++){
 				if(pai[i]!=-1)
 					return;
 				}
@@ -70,11 +70,22 @@
 	        <td><img src="1.jpg" id="img0" onclick="fanpai(0)"/></td>
 	        <td><img src="1.jpg" id="img1" onclick="fanpai(1)"/></td>
 	        <td><img src="1.jpg" id="img2" onclick="fanpai(2)"/></td>
+	        <td><img src="1.jpg" id="img3" onclick="fanpai(3)"/></td>
         </tr>
         <tr>
-	        <td><img src="1.jpg" id="img3" onclick="fanpai(3)"/></td>
 	        <td><img src="1.jpg" id="img4" onclick="fanpai(4)"/></td>
 	        <td><img src="1.jpg" id="img5" onclick="fanpai(5)"/></td>
+	        <td><img src="1.jpg" id="img6" onclick="fanpai(6)"/></td>
+	        <td><img src="1.jpg" id="img7" onclick="fanpai(7)"/></td>
+        </tr>
+        <tr>	        
+	        <td><img src="1.jpg" id="img8" onclick="fanpai(8)"/></td>
+	        <td><img src="1.jpg" id="img9" onclick="fanpai(9)"/></td>
+	        <td><img src="1.jpg" id="img10" onclick="fanpai(10)"/></td>
+	        <td><img src="1.jpg" id="img11" onclick="fanpai(11)"/></td>
+        </tr>
+        <tr>
+	        
         </tr>
         </table>
     </center>
