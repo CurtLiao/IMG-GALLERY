@@ -11,6 +11,10 @@
 		var pai=[1,1,2,2,3,3,4,4,5,5,6,6];
 		var flag=false;
 		var oneid=-1;
+		var audio1 = new Audio('1.mp3');
+		var audio2 = new Audio('2.mp3');
+		var audio3 = new Audio('3.mp3');
+		var yields = new Audio('yield.mp3');
     	function fanpai(id){
 			if(pai[id]==-1){
 					return;
@@ -32,6 +36,7 @@
 					flag=true;
 				}
 				checkSuccess();
+
 		}
 		//載入頁面重新洗牌
 		function xipai(){
@@ -52,11 +57,24 @@
 		//檢驗是否全部成功
 		function checkSuccess(){
 			for(var i=0;i<12;i++){
-				if(pai[i]!=-1)
+				if(pai[i]!=-1){
 					return;
 				}
+				yields.play();
+			}
+			
 			alert("恭喜，答對囉，按確定再挑戰一次");
 			location.reload();
+
+		}
+		function FirstAudio() {
+    		audio1.play();
+		}
+		function SecondAudio() {
+    		audio2.play();
+		}
+		function ThirdAudio() {
+    		audio3.play();
 		}
     </script>
 </head>
@@ -67,27 +85,28 @@
         <br />
     	<table>
         <tr>
-	        <td><img src="1.jpg" id="img0" onclick="fanpai(0)"/></td>
-	        <td><img src="1.jpg" id="img1" onclick="fanpai(1)"/></td>
-	        <td><img src="1.jpg" id="img2" onclick="fanpai(2)"/></td>
-	        <td><img src="1.jpg" id="img3" onclick="fanpai(3)"/></td>
+	        <td onmousedown="ThirdAudio()"><img src="1.jpg" id="img0" onclick="fanpai(0)"/></td>
+	        <td onmousedown="SecondAudio()"><img src="1.jpg" id="img1" onclick="fanpai(1)"/></td>
+	        <td onmousedown="FirstAudio()"><img src="1.jpg" id="img2" onclick="fanpai(2)"/></td>
+	        <td onmousedown="ThirdAudio()"><img src="1.jpg" id="img3" onclick="fanpai(3)"/></td>
         </tr>
         <tr>
-	        <td><img src="1.jpg" id="img4" onclick="fanpai(4)"/></td>
-	        <td><img src="1.jpg" id="img5" onclick="fanpai(5)"/></td>
-	        <td><img src="1.jpg" id="img6" onclick="fanpai(6)"/></td>
-	        <td><img src="1.jpg" id="img7" onclick="fanpai(7)"/></td>
+	        <td onmousedown="SecondAudio()"><img src="1.jpg" id="img4" onclick="fanpai(4)"/></td>
+	        <td onmousedown="ThirdAudio()"><img src="1.jpg" id="img5" onclick="fanpai(5)"/></td>
+	        <td onmousedown="FirstAudio()"><img src="1.jpg" id="img6" onclick="fanpai(6)"/></td>
+	        <td onmousedown="FirstAudio()"><img src="1.jpg" id="img7" onclick="fanpai(7)"/></td>
         </tr>
         <tr>	        
-	        <td><img src="1.jpg" id="img8" onclick="fanpai(8)"/></td>
-	        <td><img src="1.jpg" id="img9" onclick="fanpai(9)"/></td>
-	        <td><img src="1.jpg" id="img10" onclick="fanpai(10)"/></td>
-	        <td><img src="1.jpg" id="img11" onclick="fanpai(11)"/></td>
+	        <td onmousedown="FirstAudio()"><img src="1.jpg" id="img8" onclick="fanpai(8)"/></td>
+	        <td onmousedown="SecondAudio()"><img src="1.jpg" id="img9" onclick="fanpai(9)"/></td>
+	        <td onmousedown="ThirdAudio()"><img src="1.jpg" id="img10" onclick="fanpai(10)"/></td>
+	        <td onmousedown="SecondAudio()"><img src="1.jpg" id="img11" onclick="fanpai(11)"/></td>
         </tr>
         <tr>
 	        
         </tr>
         </table>
+
     </center>
 </body>
 <script language="javascript">
